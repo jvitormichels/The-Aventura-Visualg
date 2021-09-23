@@ -61,12 +61,12 @@ danomp: inteiro //guarda o dano que o monstro recebe proveniente do ataque do jo
 
 //itens
 iditem: inteiro //usado para se referir a cada item nos vetores que guardam suas respectivas informa��es
-nameitem: vetor [1..3] de literal //guarda o nome dos itens, posi��es referenciadas pela vari�vel de controle iditem
+nameitem: vetor [1..3] de caractere //guarda o nome dos itens, posi��es referenciadas pela vari�vel de controle iditem
 item_sell_value: vetor [1..3] de inteiro //guarda o pre�o de venda dos itens
 
 //invent�rio
 idinv: inteiro //usado para se referir �s posi��es do invent�rio
-iteminv: vetor [1..7] de literal //guarda os nomes dos itens que est�o no invent�rio
+iteminv: vetor [1..7] de caractere //guarda os nomes dos itens que est�o no invent�rio
 inv_item_quant: vetor [1..7] de  inteiro //guarda a quantidade de cada item que est� no invent�rio, referenciado pela variavel de controle id_inv
 player_money: inteiro //guarda o valor em moedas que o jogador possui
 id_item_inv: vetor [1..7] de inteiro //guarda o id do item que preenche um slot de armazenamento no invent�rio, utilizado para se referir ao item em si
@@ -169,12 +169,12 @@ procedimento start(): inteiro
     fimpara
 fimprocedimento
 
-procedimento shop(): literal
+procedimento shop(): caractere
   var
-  opcs: literal
+  opcs: caractere
   sairs: logico
   i: inteiro
-  opc_venda: literal
+  opc_venda: caractere
 
   inicio
     opcs:="0"
@@ -240,9 +240,9 @@ procedimento drop(): inteiro //encarregado do drop dos monstros
 
   sort_drop: inteiro   //decide se o monstro dropa ou n�o os itens a ele designados
 
-  name_item_drop: vetor [1..2] de literal //guarda o nome dos itens dropados
+  name_item_drop: vetor [1..2] de caractere //guarda o nome dos itens dropados
   drop_quant: vetor [1..2] de inteiro //guarda a quantidade de itens dropados
-  opc_drops: literal //guarda o valor da posi��o cujo item o jogador deseja obter detalhes ou adicionar ao invent�rio
+  opc_drops: caractere //guarda o valor da posi��o cujo item o jogador deseja obter detalhes ou adicionar ao invent�rio
 
   coletado: logico
 
