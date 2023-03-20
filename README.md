@@ -9,6 +9,7 @@ Influenciado principalmente pelos webtoons [The Gamer](https://www.webtoons.com/
 # Funcionalidades
 * Mapa em forma de matriz 9x9
 * Batalha de turno com monstros
+* Sistema de HP
 * 3 monstros com status diferentes
 * Drop de monstros
 * Inventário funcional (coleta de drops)
